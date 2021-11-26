@@ -14,7 +14,9 @@ public class Example {
     	
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message message = Message.creator(
+            //Here you have to enter To number, where you want to send text message.
                 new com.twilio.type.PhoneNumber(""),
+            //This is from number which will be the number generted through Twilio.
                 new com.twilio.type.PhoneNumber(""),
                 "koi slots dila do")
             .create();
